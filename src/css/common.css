@@ -1,0 +1,59 @@
+/* Reset styles */
+
+body {
+  font-family: 'Inter Tight', sans-serif;
+  color: var(--main-color);
+  background-color: black;
+}
+
+:root {
+  --accent-color: rgba(237, 59, 68, 1);
+  --main-color: rgba(250, 250, 250, 1);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
