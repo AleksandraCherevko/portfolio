@@ -1,5 +1,5 @@
 @media only screen and (max-width: 768px) {
-  .header-section {
+  header {
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -17,6 +17,12 @@
   }
   .header-image {
     border-radius: 18px;
+    height: auto; /* Сохраняет пропорции */
+    transition: transform 0.3s ease;
+  }
+
+  .header-image:hover {
+    transform: scale(1.1);
   }
   .header-logo-name {
     font-size: 20px;
@@ -39,27 +45,43 @@
   .header-btn {
     display: none;
   }
+
+  .header-navigation {
+    display: flex;
+  }
+
+  .mobile-btn {
+    margin-left: auto;
+    width: 28px;
+    height: 28px;
+  }
+
+  .header-list-title {
+    display: none;
+  }
 }
-@media only screen and (min-width: 768px) and (max-width: 1439px) {
-  .header-section {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  header > .container {
+    display: flex;
+    max-width: 704px;
+    width: 100%;
+  }
+  header {
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
+  }
+
+  .header-logo {
+    display: flex;
+    gap: 8px;
   }
 
   .header-navigation {
     display: flex;
   }
-  .header-logo {
-    margin-right: 151px;
-  }
-  .header-image {
-  }
-  .header-logo-name {
-  }
-  .span {
-  }
-  .header-list {
-    display: block;
+  .header-menu {
+    margin-left: 151px;
   }
   .header-list-title {
     font-size: 16px;
@@ -76,12 +98,13 @@
   .header-list-title:focus {
     color: var(--accent-color);
   }
-  .header-item {
+  .header-list {
     display: none;
   }
   .header-item-link {
   }
   .header-btn {
+    margin-left: auto;
     color: var(--main-color);
     display: block;
     font-size: 16px;
@@ -99,13 +122,93 @@
   .header-btn:focus {
     background-color: rgba(224, 55, 63, 1);
   }
+
+  .mobile-btn {
+    display: none;
+  }
+  .header-image {
+    border-radius: 18px;
+    height: auto; /* Сохраняет пропорции */
+    transition: transform 0.3s ease;
+  }
+
+  .header-image:hover {
+    transform: scale(1.1);
+  }
 }
 
-@media screen and (min-width: 1440px) {
-  .header-section {
+@media screen and (min-width: 1280px) {
+  header > .container {
+    display: flex;
+    max-width: 1376px;
+    width: 100%;
+  }
+  header {
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: flex;
   }
+
   .header-logo {
-    margin-right: 487px;
+    display: flex;
+    gap: 8px;
+  }
+
+  .header-btn {
+    margin-left: auto;
+    color: var(--main-color);
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    background-color: var(--accent-color);
+    border: none;
+    padding: 18px 24px 18px 24px;
+    border-radius: 60px;
+    height: 55px;
+  }
+
+  .header-btn:hover,
+  .header-btn:focus {
+    background-color: rgba(224, 55, 63, 1);
+  }
+
+  .mobile-btn {
+    display: none;
+  }
+  .header-list {
+    display: none;
+  }
+  .header-navigation {
+    display: flex;
+  }
+  .header-list-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    transition: color 0.3s ease;
+  }
+
+  .header-list-title:hover,
+  .header-list-title:focus {
+    color: var(--accent-color);
+  }
+
+  .header-menu {
+    margin-left: 487px;
+  }
+  .header-image {
+    border-radius: 18px;
+    height: auto; /* Сохраняет пропорции */
+    transition: transform 0.3s ease;
+  }
+
+  .header-image:hover {
+    transform: scale(1.1);
   }
 }
