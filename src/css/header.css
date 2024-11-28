@@ -143,7 +143,7 @@
   }
   .header-image {
     border-radius: 18px;
-    height: auto; /* Сохраняет пропорции */
+    height: auto; 
     transition: transform 0.3s ease;
   }
 
@@ -172,6 +172,7 @@
     left: 0;
     top: 0;
     right: 0;
+    width: 100%;
   }
 
   .header-logo {
