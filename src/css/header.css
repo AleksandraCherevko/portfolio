@@ -39,6 +39,11 @@
     gap: 3px;
   }
 
+  .header-logo-name:hover,
+  .header-logo-name:focus {
+    color: var(--accent-color);
+  }
+
   .span {
     width: 8px;
     height: 8px;
@@ -145,6 +150,11 @@
   .header-image:hover {
     transform: scale(1.1);
   }
+
+  .header-logo-name:hover,
+  .header-logo-name:focus {
+    color: var(--accent-color);
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -157,6 +167,11 @@
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    right: 0;
   }
 
   .header-logo {
@@ -219,6 +234,10 @@
   }
 
   .header-image:hover {
+    transform: scale(1.1);
+  }
+  .header-logo-name:hover,
+  .header-logo-name:focus {
     transform: scale(1.1);
   }
 }
